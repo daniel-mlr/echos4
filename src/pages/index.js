@@ -1,32 +1,13 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-
-// data
-// markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
+    <main>
       <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Les Échos du Pacifique
-        <br />
-        
-        <span style={headingAccentStyles}>Site temporaire pour la transition vers Gatsby 4</span>
-      </h1>
+      <Link to="/about">À propos</Link>
+      <h1> Les Échos du Pacifique</h1>
+      <h2>Site temporaire pour la transition vers Gatsby 4</h2>
       <p>Il comprendra</p>
       <ul>
         <li>Layout</li>
